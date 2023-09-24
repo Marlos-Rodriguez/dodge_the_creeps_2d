@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+// This Go code is for local testing.
 func main() {
 	fs := http.FileServer(http.Dir("./"))
 	http.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
